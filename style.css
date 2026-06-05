@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f9d2c7;
+    color:#444;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(#ffc6c6,#f9bdbd);
+}
+
+.hero h1{
+    color:#ff6f6f;
+}
+
+.card{
+    background:#ffe6dc;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#ff7373;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.journey-item{
+    margin-bottom:15px;
+}
+
+.pill{
+    background:#ffb9b9;
+    padding:12px;
+    border-radius:12px;
+    text-align:center;
+    margin:10px 0;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.superpower{
+    background:#ffc4c4;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.quote-box{
+    background:#ffc4c4;
+    padding:15px;
+    border-radius:15px;
+}
+
+button{
+    background:#ff7c7c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    font-weight:bold;
+}
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.gallery-item img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.gallery-item img:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
