@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f9d2c7;
+    background:#f4d8cf;
     color:#444;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 .card{
-    background:#ffe6dc;
+    background:#f9e0d7;
     margin:20px;
     padding:20px;
     border-radius:20px;
@@ -39,11 +39,18 @@ h2{
 }
 
 .pill{
-    background:#ffb9b9;
+    background:#f38c8c;
     padding:12px;
     border-radius:12px;
     text-align:center;
     margin:10px 0;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.pill:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .gallery img{
@@ -53,21 +60,42 @@ h2{
 }
 
 .superpower{
-    background:#ffc4c4;
+    background:#f38c8c;
     padding:20px;
-    border-radius:15px;
-    margin-bottom:15px;
+    border-radius:20px;
+    margin-bottom:20px;
     text-align:center;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.superpower:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 .quote-box{
-    background:#ffc4c4;
+    background:#f38c8c;
     padding:15px;
     border-radius:15px;
 }
 
+.quote-box{
+    background:#f38c8c;
+    padding:20px;
+    border-radius:20px;
+    margin:20px 0;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.quote-box:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
 button{
-    background:#ff7c7c;
+    background:#f38c8c;
     color:white;
     border:none;
     padding:12px 20px;
@@ -98,4 +126,230 @@ footer{
 .gallery-item img:hover{
     transform:scale(1.08);
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+.power-icon{
+    width:70px;
+    height:70px;
+    margin-bottom:15px;
+}
+.superpower.active{
+    transform:scale(1.05);
+}
+
+.journey-item{
+    border-left:6px solid #ff7c7c;
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+.journey-item h3{
+    color:#f38c8c;
+    margin-bottom:10px;
+    font-size:1.8rem;
+}
+
+.journey-item p{
+    font-size:1.2rem;
+}
+.quote-box{
+    background:#f38c8c;
+    padding:20px;
+    border-radius:20px;
+    margin:20px 0;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.quote-box.active{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.superpower{
+    transition:0.4s;
+}
+
+.superpower:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.superpower img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.counter-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.counter-section h2{
+    color:#ff4f81;
+    margin-bottom:20px;
+}
+
+.counter{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.counter div{
+    background:#ffb6c1;
+    padding:20px;
+    border-radius:15px;
+    min-width:100px;
+}
+
+.counter span{
+    font-size:32px;
+    font-weight:bold;
+    display:block;
+}
+
+.counter-box{
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.counter-box:hover{
+    transform:translateY(-10px) scale(1.08);
+    box-shadow:0 15px 30px rgba(255,105,180,0.4);
+}
+
+.counter-box{
+    animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.counter div{
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.counter div:hover{
+    transform:translateY(-10px) scale(1.08);
+    box-shadow:0 15px 30px rgba(250, 114, 182, 0.4);
+}
+
+.counter div{
+    transition:0.4s ease;
+}
+
+.counter div:hover{
+    background:#ffb6d9;
+}
+
+.counter div{
+    position:relative;
+    transition:0.4s;
+}
+
+.counter div{
+    position:relative;
+    overflow:visible;
+}
+
+/* Days */
+.counter div:nth-child(1):hover::after{
+    content:"❤️";
+    position:absolute;
+    bottom:-45px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:24px;
+    animation:floatDown 1s infinite;
+}
+
+/* Hours */
+.counter div:nth-child(2):hover::after{
+    content:"🌸";
+    position:absolute;
+    bottom:-45px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:24px;
+    animation:floatDown 1s infinite;
+}
+
+/* Minutes */
+.counter div:nth-child(3):hover::after{
+    content:"💎";
+    position:absolute;
+    bottom:-45px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:24px;
+    animation:floatDown 1s infinite;
+}
+
+/* Seconds */
+.counter div:nth-child(4):hover::after{
+    content:"🫂";
+    position:absolute;
+    bottom:-45px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:24px;
+    animation:floatDown 1s infinite;
+}
+
+@keyframes floatDown{
+    0%{
+        opacity:0;
+        transform:translateX(-50%) translateY(-10px);
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateX(-50%) translateY(20px);
+    }
+}
+
+@keyframes heartFloat{
+    0%{
+        opacity:0;
+        transform:translateX(-50%) translateY(10px);
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateX(-50%) translateY(-15px);
+    }
+}
+
+.counter span{
+    display:block;
+    animation:heartbeat 4s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.03);
+    }
 }
